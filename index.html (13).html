@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Class Gifting | Client Gifting, Coordinated End-to-End</title>
+<meta name="description" content="First Class Gifting — we coordinate your client gifting end-to-end. You pick the budget, we handle branding, sending, and tracking. Gifts fulfilled by Sugarwish, our gifting partner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ==== FIRST CLASS AI PALETTE — black & white primary, gold secondary ==== */
+  --black:#0B0B0D;       /* primary brand black */
+  --graphite:#1A1B1F;    /* deep panel black */
+  --gold:#C9A040;        /* brand gold accent */
+  /* ======================================================================== */
+  --gold-dark:#7A5C14;
+  --gold-tint:#FBF5E8;
+  --paper:#FFFFFF;
+  --paper-2:#FFFFFF;
+  --ink:#17181C;
+  --slate:#55575E;
+  --line:#E2E3E6;
+  --radius:12px;
+  /* metallic finishes */
+  --metal-black:linear-gradient(135deg,#050506 0%,#1A1B1F 28%,#4A4D55 48%,#101114 68%,#26282E 100%);
+  --metal-black-deep:linear-gradient(150deg,#070708 0%,#141519 30%,#2E3138 52%,#0B0C0E 74%,#1D1F24 100%);
+  --metal-gold:linear-gradient(135deg,#8C6C1E 0%,#C9A040 30%,#F0DA96 50%,#B8902F 70%,#E3C77E 100%);
+  --metal-gold-text:linear-gradient(120deg,#6E5312 0%,#A67F26 35%,#C9A040 55%,#7A5C14 100%);
+  --metal-ink-text:linear-gradient(120deg,#08080A 0%,#3A3D44 42%,#585C66 52%,#101114 68%,#2B2D33 100%);
+}
+@keyframes sheen{
+  0%{background-position:0% 50%}
+  100%{background-position:200% 50%}
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.display{font-family:'Archivo',sans-serif;font-stretch:82%;font-weight:900;letter-spacing:-.01em;line-height:1.05;text-transform:uppercase;color:var(--black);background:var(--metal-ink-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.eyebrow{font-family:'Archivo',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#A67F26;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+::selection{background:var(--gold);color:#fff}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:'Archivo',sans-serif;font-weight:900;font-stretch:82%;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;color:var(--black)}
+.logo span{color:#A67F26;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.88rem;font-weight:600;color:var(--slate);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--black)}
+.btn{display:inline-block;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:85%;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:15px 28px;border-radius:8px;text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s;border:none;cursor:pointer}
+.btn-dark{background:var(--metal-black);background-size:200% 100%;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -2px 4px rgba(0,0,0,.4),0 4px 14px rgba(11,11,13,.28)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 4px rgba(0,0,0,.4),0 10px 26px rgba(11,11,13,.38);animation:sheen 1.2s linear}
+.btn-outline{border:2px solid #B8902F;color:var(--gold-dark);background:linear-gradient(135deg,rgba(201,160,64,.08),rgba(240,218,150,.18),rgba(201,160,64,.08));padding:13px 26px}
+.btn-outline:hover{border-color:#8C6C1E;box-shadow:0 6px 18px rgba(201,160,64,.25)}
+.nav-links .btn{padding:11px 20px}
+.nav-links a.btn-dark,.nav-links a.btn-dark:hover{color:#fff}
+.foot-grid .col a.logo{color:var(--black)}
+.nav-cta .cta-short{display:none}
+@media (max-width:380px){
+  .nav-cta{padding:11px 14px}
+  .nav-cta .cta-full{display:none}
+  .nav-cta .cta-short{display:inline}
+}
+
+/* HERO */
+.hero{position:relative;padding:96px 0 88px;background:
+  radial-gradient(640px 400px at 88% 0%,rgba(201,160,64,.16),transparent 60%),
+  linear-gradient(180deg,var(--paper-2),var(--paper) 75%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.2rem);margin:18px 0 22px}
+.hero h1 em{font-style:normal;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p.lede{font-size:1.12rem;color:var(--slate);max-width:34rem;margin-bottom:34px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-note{margin-top:22px;font-size:.85rem;color:var(--slate)}
+
+/* gift card visual */
+.giftbox{position:relative;border:1px solid var(--line);border-radius:16px;background:var(--paper);padding:34px 30px;box-shadow:0 24px 60px rgba(11,11,13,.14)}
+.giftbox::before{content:"";position:absolute;inset:0 0 auto 0;height:7px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,#050506,#2E3138 22%,#585C66 38%,#C9A040 62%,#F0DA96 78%,#B8902F)}
+.gb-tag{display:inline-block;background:var(--metal-gold);color:#3D2E08;text-shadow:0 1px 1px rgba(255,255,255,.4);font-family:'Archivo',sans-serif;font-weight:800;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 12px;border-radius:5px;margin-bottom:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 2px rgba(0,0,0,.2),0 2px 8px rgba(201,160,64,.35)}
+.gb-line{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.gb-line:last-of-type{border-bottom:none}
+.gb-line .k{color:var(--slate)}
+.gb-line .v{font-weight:600;color:var(--black)}
+.gb-line .v.gold{color:#A67F26;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* SECTIONS */
+section{padding:88px 0}
+.tint{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{max-width:46rem;margin-bottom:52px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:14px 0 14px}
+.sec-head p{color:var(--slate);font-size:1.02rem}
+
+/* HOW IT WORKS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;background:var(--paper);transition:box-shadow .25s,transform .25s,border-color .25s}
+.step:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 16px 36px rgba(11,11,13,.1)}
+.step .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.2em;color:#A67F26;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px}
+.step h3{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:85%;font-size:1.15rem;text-transform:uppercase;color:var(--black);margin-bottom:10px}
+.step p{font-size:.95rem;color:var(--slate)}
+
+/* CATEGORIES */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;background:var(--paper);cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s;position:relative}
+.cat:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,11,13,.1)}
+.cat.active{border-color:var(--gold);background:var(--gold-tint);box-shadow:0 12px 28px rgba(201,160,64,.2)}
+.cat.active::after{content:"✓";position:absolute;top:12px;right:14px;width:22px;height:22px;border-radius:50%;background:var(--metal-gold);color:#3D2E08;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.cat h4{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:85%;font-size:.95rem;text-transform:uppercase;color:var(--black);margin-bottom:6px}
+.cat p{font-size:.82rem;color:var(--slate);line-height:1.5}
+.cat .pop{position:absolute;top:-10px;left:16px;background:var(--metal-gold);color:#3D2E08;text-shadow:0 1px 1px rgba(255,255,255,.4);font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:4px;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 2px 6px rgba(201,160,64,.35)}
+.cats-hint{margin-top:20px;font-size:.86rem;color:var(--slate)}
+
+/* SIZES */
+.sizes{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.size{border:1px solid var(--line);border-radius:var(--radius);padding:22px 12px;text-align:center;background:var(--paper);cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s}
+.size:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 24px rgba(11,11,13,.1)}
+.size.active{border-color:var(--gold);background:var(--gold-tint);box-shadow:0 12px 24px rgba(201,160,64,.2)}
+.size h4{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:85%;font-size:.85rem;text-transform:uppercase;color:var(--black)}
+.size .items{font-size:.74rem;color:var(--slate);margin:6px 0 10px}
+.size .price{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.3rem;color:#A67F26;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.size-note{margin-top:18px;font-size:.84rem;color:var(--slate)}
+
+/* INCLUDED */
+.included{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.inc{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px 24px 24px 28px;position:relative;overflow:hidden}
+.inc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#8C6C1E,#F0DA96 50%,#B8902F)}
+.inc h4{font-size:.95rem;font-weight:700;color:var(--black);margin-bottom:6px}
+.inc p{font-size:.86rem;color:var(--slate)}
+
+/* ORDER FORM */
+.form-embed-wrap{background:transparent;max-width:760px;margin:0 auto}
+#order .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+.form-embed-wrap iframe{display:block;width:100%;border:0}
+
+/* CTA */
+.cta{background:var(--metal-black-deep);position:relative;text-align:center;overflow:hidden}
+.cta::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#8C6C1E,#F0DA96 30%,#C9A040 55%,#F0DA96 80%,#8C6C1E)}
+.cta::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 260px at 50% 0%,rgba(240,218,150,.14),transparent 65%);pointer-events:none}
+.cta .wrap{position:relative;z-index:1}
+.cta .eyebrow{background:linear-gradient(120deg,#C9A040,#F5E3A8 50%,#C9A040);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.cta .display{background:linear-gradient(120deg,#FFFFFF 0%,#D9DADD 45%,#FFFFFF 60%,#E8E9EB 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.cta h2{font-size:clamp(2rem,4vw,3rem);margin:14px auto 16px;max-width:40rem}
+.cta p{color:#C9CBD1;max-width:34rem;margin:0 auto 32px}
+.cta .btn{background:var(--metal-gold);background-size:200% 100%;color:#3D2E08;text-shadow:0 1px 1px rgba(255,255,255,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 4px rgba(0,0,0,.2),0 4px 14px rgba(201,160,64,.4)}
+.cta .btn:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 12px 30px rgba(201,160,64,.5);transform:translateY(-2px);animation:sheen 1.2s linear}
+
+/* FOOTER */
+footer{padding:56px 0 36px;background:var(--paper-2);border-top:1px solid var(--line)}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.foot-grid .col p,.foot-grid .col a{font-size:.88rem;color:var(--slate);text-decoration:none;display:block;margin-top:8px}
+.foot-grid .col a:hover{color:var(--gold-dark)}
+.foot-grid h5{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--black);margin-bottom:6px}
+.foot-bottom{padding-top:24px;font-size:.8rem;color:var(--slate);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .steps{grid-template-columns:1fr}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .sizes{grid-template-columns:repeat(4,1fr)}
+  .included{grid-template-columns:1fr}
+  .order-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .nav-links a:not(.btn){display:none}
+}
+@media (max-width:560px){
+  .cats{grid-template-columns:1fr}
+  .sizes{grid-template-columns:repeat(2,1fr)}
+  .two-col{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero{padding:64px 0 56px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="https://firstclass-ai.com/" style="display:flex;align-items:center;gap:10px">
+      <img src="https://firstclass-ai.com/wp-content/uploads/2024/08/first-class-ai-logo-2.png" alt="First Class AI" style="height:44px;width:auto;display:block" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+      <span style="display:none">First Class <span>AI</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">How It Works</a>
+      <a href="#menu">Gift Menu</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#order" class="btn btn-dark nav-cta"><span class="cta-full">Start an Order</span><span class="cta-short">Order</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">First Class Gifting</div>
+      <h1 class="display">Send gifts your clients <em>actually want.</em></h1>
+      <p class="lede">We coordinate your client gifting end-to-end. You choose the perfect gift once — for your entire list — and we handle the branding, ordering, and delivery to every client's door. Fulfilled by Sugarwish, our gifting partner. No links to send, no follow-up, no boxes to pack.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-dark" href="#order">Build Your Order</a>
+        <a class="btn btn-outline" href="#menu">Browse the Menu</a>
+      </div>
+      <p class="hero-note">Perfect for client appreciation, referral thank-yous, tax season wrap-ups &amp; holidays.</p>
+    </div>
+    <div class="giftbox" aria-hidden="true">
+      <span class="gb-tag">You Choose · We Coordinate · They Enjoy</span>
+      <div class="gb-line"><span class="k">Your branding on</span><span class="v">Gift Card &amp; Note Card</span></div>
+      <div class="gb-line"><span class="k">You choose from</span><span class="v">75+ Gourmet Options</span></div>
+      <div class="gb-line"><span class="k">Fulfilled by</span><span class="v">Sugarwish, Our Gifting Partner</span></div>
+      <div class="gb-line"><span class="k">Delivered to</span><span class="v">Every Client's Door</span></div>
+      <div class="gb-line"><span class="k">Your effort</span><span class="v gold">One Email</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="how" class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="display">Three steps. We do the heavy lifting.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">Step 01</div>
+        <h3>You Choose</h3>
+        <p>Pick the gift category, the treats, size, and quantity for your whole list — then send us your client list with names and mailing addresses.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 02</div>
+        <h3>We Coordinate</h3>
+        <p>We set up your account, build the branded gift card and note card with your logo and message, send you a proof, then place the full order.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 03</div>
+        <h3>They Enjoy</h3>
+        <p>Sugarwish packs your selections and ships to every client's door in their signature gift box — with your branding and message inside. Zero follow-up for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The Gift Menu</div>
+      <h2 class="display">Twelve categories. Something for every client list.</h2>
+      <p>Choose the category — and the treats — your clients will receive. Every box on your list gets the same hand-picked gift. Click one to add it to your order.</p>
+    </div>
+    <div class="cats" id="catGrid">
+      <div class="cat" data-cat="Cookies"><span class="pop">Most Popular</span><h4>Cookies</h4><p>Freshly baked — classic, frosted, stuffed, plus gluten-free.</p></div>
+      <div class="cat" data-cat="Candy &amp; Snacks"><h4>Candy &amp; Snacks</h4><p>Gourmet chocolates, gummies, sours, nuts &amp; nostalgic classics.</p></div>
+      <div class="cat" data-cat="Brownies"><h4>Brownies</h4><p>Rich, decadent brownies in indulgent flavors.</p></div>
+      <div class="cat" data-cat="Popcorn"><h4>Popcorn</h4><p>Small-batch, fresh-popped sweet &amp; savory favorites.</p></div>
+      <div class="cat" data-cat="Bakery &amp; Café"><h4>Bakery &amp; Café</h4><p>Cookies and brownies plus coffee &amp; tea pairings.</p></div>
+      <div class="cat" data-cat="Coffee &amp; Tea"><h4>Coffee &amp; Tea</h4><p>Locally roasted coffees, organic teas, and biscotti.</p></div>
+      <div class="cat" data-cat="Candles"><h4>Candles</h4><p>Beautifully scented premium candles for home or office.</p></div>
+      <div class="cat" data-cat="Hot Sauce"><h4>Hot Sauce</h4><p>Artisan small-batch sauces at every heat level.</p></div>
+      <div class="cat" data-cat="Cocktail Mixers"><h4>Cocktail Mixers</h4><p>Handcrafted with fresh fruit — with or without alcohol.</p></div>
+      <div class="cat" data-cat="Wine &amp; Tastings"><h4>Wine &amp; Tastings</h4><p>Sommelier-curated bottles and tasting kits (select sizes).</p></div>
+      <div class="cat" data-cat="Gift Sets &amp; Spa"><h4>Gift Sets &amp; Spa</h4><p>Gourmet spreads, candles, and spa indulgences.</p></div>
+      <div class="cat" data-cat="Dog Treats"><h4>Dog Treats</h4><p>Because four-legged clients deserve appreciation too.</p></div>
+    </div>
+    <p class="cats-hint">Not sure which treats to pick? Tell us your budget and audience — we'll recommend a crowd-pleasing selection for your proof.</p>
+  </div>
+</section>
+
+<section id="pricing" class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Gift Sizes &amp; Pricing</div>
+      <h2 class="display">Pick the size that fits the relationship.</h2>
+      <p>Per-gift prices include your selected treats, Sugarwish's signature gift box, and sales tax. Each campaign also includes a Service &amp; Set Up Fee + Delivery — covering account setup, your branded gift card and note card, proofs, placing the full order, and delivery to every client on your list. We'll quote this on your invoice after reviewing your order. Click a size to add it to your order.</p>
+    </div>
+    <div class="sizes" id="sizeGrid">
+      <div class="size" data-size="Mini" data-price="27"><h4>Mini</h4><div class="items">2 items</div><div class="price">$27</div></div>
+      <div class="size" data-size="Small" data-price="39"><h4>Small</h4><div class="items">4 items</div><div class="price">$39</div></div>
+      <div class="size active" data-size="Medium" data-price="49"><h4>Medium</h4><div class="items">6 items</div><div class="price">$49</div></div>
+      <div class="size" data-size="Large" data-price="59"><h4>Large</h4><div class="items">8 items</div><div class="price">$59</div></div>
+      <div class="size" data-size="X-Large" data-price="79"><h4>X-Large</h4><div class="items">12 items</div><div class="price">$79</div></div>
+      <div class="size" data-size="Deluxe" data-price="99"><h4>Deluxe</h4><div class="items">16 items</div><div class="price">$99</div></div>
+      <div class="size" data-size="Grand" data-price="139"><h4>Grand</h4><div class="items">24 items</div><div class="price">$139</div></div>
+    </div>
+    <p class="size-note">Your Service &amp; Set Up Fee + Delivery is quoted on your invoice based on campaign size. Volume pricing available on orders of 25+ gifts.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Every Gift Includes</div>
+      <h2 class="display">Branded end to end.</h2>
+    </div>
+    <div class="included">
+      <div class="inc"><h4>Your branding on the gift card</h4><p>Your logo and message on the digital gift card, plus the printed box card and note card inside every box.</p></div>
+      <div class="inc"><h4>The Sugarwish unboxing</h4><p>Gifts arrive in Sugarwish's signature gift box — a delivery experience clients already know and love.</p></div>
+      <div class="inc"><h4>Full coordination</h4><p>We handle account setup, branding, proofs, ordering, and delivery to your entire list. You send one email.</p></div>
+      <div class="inc"><h4>One gift, hand-picked by you</h4><p>You choose the treats once for the whole campaign — no links, no follow-up, no chasing responses.</p></div>
+      <div class="inc"><h4>A branded proof first</h4><p>You approve exactly what ships before anything goes out to your clients.</p></div>
+      <div class="inc"><h4>Delivered to their door</h4><p>Send us mailing addresses for your list and we take it from there.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Start Your Order</div>
+      <h2 class="display">Submit your gifting order.</h2>
+      <p>Fill out the form below with your firm details, gift selection, and client list — we'll follow up with a branded proof and your invoice.</p>
+    </div>
+    <div class="form-embed-wrap">
+      <iframe
+        src="https://link.league.marketing/widget/form/g9ROVUEdwP7JR6olLjEy"
+        style="width:100%;height:1400px;border:none"
+        id="inline-g9ROVUEdwP7JR6olLjEy"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="First Class Gifting Order"
+        data-height="undefined"
+        data-layout-iframe-id="inline-g9ROVUEdwP7JR6olLjEy"
+        data-form-id="g9ROVUEdwP7JR6olLjEy"
+        title="First Class Gifting Order">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="eyebrow">Prefer to Talk It Through?</div>
+    <h2 class="display">Book a 15-minute gifting call.</h2>
+    <p>We'll walk you through the menu, branding options, and volume pricing — and have your first send ready within days.</p>
+    <a class="btn" href="https://link.league.marketing/widget/booking/EPxocYTsdEr3y4LZxPxD" target="_blank" rel="noopener">Book a Call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="col">
+        <a class="logo" href="https://firstclass-ai.com/" style="display:flex;align-items:center">
+          <img src="https://firstclass-ai.com/wp-content/uploads/2024/08/first-class-ai-logo-2.png" alt="First Class AI" style="height:52px;width:auto;display:block" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span style="display:none;font-size:1.2rem">First Class <span>AI</span></span>
+        </a>
+        <p>First Class Gifting — client gifting, coordinated end-to-end.<br>A service of First Class AI, Valencia, CA.<br><span style="font-size:.78rem">Gifts fulfilled and shipped by Sugarwish.</span></p>
+      </div>
+      <div class="col">
+        <h5>Contact</h5>
+        <a href="tel:+16614248022">(661) 424-8022</a>
+        <a href="mailto:info@firstclass-ai.com">info@firstclass-ai.com</a>
+      </div>
+      <div class="col">
+        <h5>Office</h5>
+        <p>27200 Tourney Rd, Suite 265<br>Valencia, CA 91355</p>
+      </div>
+      <div class="col">
+        <h5>Explore</h5>
+        <a href="https://firstclass-ai.com/">firstclass-ai.com</a>
+        <a href="#menu">Gift Menu</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Fast Forward Technologies LLC. All rights reserved.</span>
+      <span>First Class Gifting — a First Class AI service</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://link.league.marketing/js/form_embed.js"></script>
+</body>
+</html>
